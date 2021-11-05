@@ -1,6 +1,6 @@
 <template>
   <v-app dark>
-    <v-app-bar
+    <!-- <v-app-bar
       app
       absolute
     >
@@ -19,10 +19,13 @@
           <v-tab to="/blog">Blog</v-tab>
         </v-tabs>
       </template>
-    </v-app-bar>
+    </v-app-bar> -->
 
-    <v-main>
+    <v-main
+      style="margin-top: 15px">
+      <v-content>
         <Nuxt />
+      </v-content>
     </v-main>
 
     <v-footer
@@ -48,6 +51,11 @@ export default {
         }
       ],
     }
-  }
+  },
+  head() {
+    return {
+      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+    };
+  },
 }
 </script>
