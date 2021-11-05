@@ -21,8 +21,7 @@
       </template>
     </v-app-bar>
 
-    <v-main
-      style="margin-top: 120px">
+    <v-main>
         <Nuxt />
     </v-main>
 
