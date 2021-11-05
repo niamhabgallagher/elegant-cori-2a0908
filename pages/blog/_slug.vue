@@ -1,7 +1,8 @@
 <template>
   <div>
     <h2>{{ post.title }}</h2>
-    <nuxt-content :document="post" />
+    <img v-if="post.thumbnail" :src="post.thumbnail"/>
+    <p v-if="post.body">{{ post.body }}</p>
   </div>
 </template>
 

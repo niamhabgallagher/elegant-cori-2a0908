@@ -3,7 +3,7 @@
     <h1>Blog Posts</h1>
     <v-list v-for="post of posts" :key="post.slug">
       <v-list-item>
-        <nuxt-link :to="post.slug">{{ post.title }}</nuxt-link>
+        <nuxt-link :to="post.path">{{ post.title }}</nuxt-link>
       </v-list-item>
     </v-list>
   </div>
@@ -20,5 +20,9 @@ export default {
       posts,
     }
   },
+  mounted() {
+    // eslint-disable-next-line no-console
+    console.log(this.posts);
+  }
 }
 </script>
