@@ -1,12 +1,12 @@
 <template>
-  <div>
-    <h1>Blog Posts</h1>
+  <v-card>
+    <v-card-title>Blog Posts</v-card-title>
     <v-list v-for="post of posts" :key="post.slug">
       <v-list-item>
         <nuxt-link :to="post.path">{{ post.title }}</nuxt-link>
       </v-list-item>
     </v-list>
-  </div>
+  </v-card>
 </template>
 
 <script>

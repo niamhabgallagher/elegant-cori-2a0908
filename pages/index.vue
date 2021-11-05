@@ -1,15 +1,7 @@
 <template>
-  <div>
-    <h1>Home Page</h1>
-  </div>
+<v-card>
+    <v-card-title primary-title>
+        Welcome to my website!!
+    </v-card-title>
+</v-card>
 </template>
-
-<script>
-export default {
-  head() {
-    return {
-      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
-    };
-  },
-};
-</script>
