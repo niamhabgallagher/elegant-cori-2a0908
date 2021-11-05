@@ -1,6 +1,6 @@
 <template>
   <v-app dark>
-    <!-- <v-app-bar
+    <v-app-bar
       app
       absolute
     >
@@ -19,7 +19,7 @@
           <v-tab to="/blog">Blog</v-tab>
         </v-tabs>
       </template>
-    </v-app-bar> -->
+    </v-app-bar>
 
     <v-main
       style="margin-top: 15px">
