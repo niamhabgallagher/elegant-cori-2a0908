@@ -8,12 +8,12 @@
             <v-icon>mdi-heart</v-icon>
             My New Website
         </v-toolbar-title>
-      <v-spacer />
-      <v-btn icon>
+      <!-- <v-spacer />
+      <v-btn icon to="/admin/#/">
         <v-icon>mdi-account-cog</v-icon>
-      </v-btn>
+      </v-btn> -->
 
-      <template v-slot:extension>
+      <template #extension>
         <v-tabs align-with-title>
           <v-tab to="/">Welcome</v-tab>
           <v-tab to="/blog">Blog</v-tab>
@@ -21,11 +21,9 @@
       </template>
     </v-app-bar>
 
-    <v-main>
-      <v-content>
-        <Nuxt />
-      </v-content>
-    </v-main>
+    <v-content>
+      <Nuxt />
+    </v-content>
 
     <v-footer
       app

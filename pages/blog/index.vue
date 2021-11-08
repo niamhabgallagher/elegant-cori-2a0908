@@ -1,5 +1,5 @@
 <template>
-  <v-card>
+  <v-card style="margin-top: 20px;">
     <v-card-title>Blog Posts</v-card-title>
     <v-list>
       <v-list-item v-for="post of posts" :key="post.slug" :to="post.path">
